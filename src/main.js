@@ -3,29 +3,24 @@ import './styles.css';
 import $ from 'jquery';
 // import 'boostrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Triangle} from './triangle';
+import {Character} from './character';
 
 $(document).ready(function() {
-  $("form#triangle").submit(function(event) {
-    var side1 = parseInt($("input#length1").val());
-    var side2 = parseInt($("input#length2").val());
-    var side3 = parseInt($("input#length3").val());
-
-    var triangle = new Triangle(side1, side2, side3);
-    if (triangle.isTriangle() === false){
-      $(".result1").text("This is not a triangle :-(");
-    }
-    else if (triangle.equilateral()) {
-      $(".result1").text("This is an equilateral triangle");
-    }
-    else if(triangle.isosceles()) {
-      $(".result1").text("This is an isosceles triangle");
-    }
-    else if (triangle.scalene()) {
-      $(".result1").text("This is an scalene triangle");
-    }
-
-    event.preventDefault();
+  let character;
+  $(".character").click(function(){
+    let race = $(this).text();
+    character = new Character(race.toLowerCase());
+    console.log(character.race);
+    $("#skill").fadeIn();
+    $("#skill span").text(race);
+    $("#sneak").attr("value", character.sneak);
+    $("#strength").attr("value", character.strength);
+    $("#charisma").attr("value", character.charisma);
+    $("#magic").attr("value", character.magic);
+    $("#archer").attr("value", character.archer);
+    $("#skill").fadeIn();
 
   });
+  
+
 });

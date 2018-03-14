@@ -1,0 +1,29 @@
+#top{
+  background-image: url("http://sf.co.ua/13/06/wallpaper-2856211.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 600px;
+  color: #000000;
+  text-decoration: underline;
+}
+#race{
+  background-image: url("https://static1.squarespace.com/static/56bf4904e321401183a5ae55/t/5715791d2fe131fe8c2ea031/1461025055142/pizza-hut-background.jpg?format=1500w");
+  height: 350px;
+  color: #FFF8E7;
+  text-decoration: underline;
+}
+#skill{
+  background-image: url("https://static1.squarespace.com/static/56bf4904e321401183a5ae55/t/5715791d2fe131fe8c2ea031/1461025055142/pizza-hut-background.jpg?format=1500w");
+  height: 350px;
+  color: #FFF8E7;
+  text-decoration: underline;
+  display: none;
+}
+.jumbotron{
+  text-align: center;
+}
+
+body{
+  background-image: url("https://static1.squarespace.com/static/56bf4904e321401183a5ae55/t/5715791d2fe131fe8c2ea031/1461025055142/pizza-hut-background.jpg?format=1500w");
+}

@@ -2,29 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Triangle Tracker</title>
+    <title>Dungeon Men</title>
   </head>
   <body>
+    <div id="top" class="jumbotron">
+      <h1>Welcome To Dungeon Men</h1>
+    </div>
+    <div id="race" class="jumbotron">
+      <img src="./img/orc.jpg" alt="">
+      <h2>Choose your race peasant</h2>
+      <br>
+      <button class="character" type="button">Goblin</button>
+      <button class="character" type="button">Orc</button>
+      <button class="character" type="button">Human</button>
+      <button class="character" type="button">Succubus</button>
+    </div>
+    <div id="skill" class="jumbotron">
+      <h2>Hello there <span></span> scum! Allocate your skills for only 25 points are allowed</h2>
+      <br>
+      <form action="/action_page.php">
 
-    <div class="container">
-      <h1>Triangle Tracker</h1>
-      <form id="triangle">
-        <label for="length1">Length #1</label>
-        <input id="length1" id="validationDefault01" class="form-control" type="text" required>
-
-        <label for="length2">Length #2</label>
-        <input id="length2" id="validationDefault01" class="form-control" type="text" required>
-
-        <label for="length3">Length #3</label>
-        <input id="length3" id="validationDefault01" class="form-control" type="text" required>
+        Sneak: <input id="sneak" type="number" name="sneak"><br>
         <br>
-        <button type="submit" class="btn btn-info" id="submit">Submit</button>
+        Strength: <input id="strength" type="number" name="strength"><br>
+        <br>
+        Charisma: <input id="charisma" type="number" name="charisma"><br>
+        <br>
+        Magic: <input id="magic" type="number" name="magic"><br>
+        <br>
+        Archer: <input id="archer" type"number" name="archer"><br>
+        <br>
+        <input type="submit" value="Submit">
       </form>
-
-      <div class="output">
-        <p>Triangle status:</p>
-        <span class="result1"></span>
-      </div>
     </div>
   </body>
 </html>
