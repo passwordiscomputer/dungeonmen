@@ -18,7 +18,9 @@ $(document).ready(function() {
     $("#skill").fadeIn();
 
   });
-
+$(".character1").click(function(){
+  $("#skill1").fadeIn();
+});
 $("#battle").fadeIn();
 
 });
