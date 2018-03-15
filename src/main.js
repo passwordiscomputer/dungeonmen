@@ -1,7 +1,5 @@
-//import { tbd } from './sample-project';
 import './styles.css';
 import $ from 'jquery';
-// import 'boostrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Character} from './character';
 
@@ -10,7 +8,6 @@ $(document).ready(function() {
   $(".character").click(function(){
     let race = $(this).text();
     character = new Character(race.toLowerCase());
-    console.log(character.race);
     $("#skill").fadeIn();
     $("#skill span").text(race);
     $("#sneak").attr("value", character.sneak);
@@ -21,6 +18,7 @@ $(document).ready(function() {
     $("#skill").fadeIn();
 
   });
-  
+
+$("#battle").fadeIn();
 
 });

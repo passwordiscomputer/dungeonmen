@@ -20,6 +20,13 @@
   text-decoration: underline;
   display: none;
 }
+#battle{
+  background-image: url("https://static1.squarespace.com/static/56bf4904e321401183a5ae55/t/5715791d2fe131fe8c2ea031/1461025055142/pizza-hut-background.jpg?format=1500w");
+  height: 350px;
+  color: #FFF8E7;
+  text-decoration: underline;
+  display: none;
+}
 .jumbotron{
   text-align: center;
 }
